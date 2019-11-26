@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Title</title>
+    <script type="application/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<script type="application/javascript">
+    $(function() {
+        const bodySelector =  $('body');
+        var randA = getRandomInt(10, 20);
+        var randB = getRandomInt(1, randA);
+        for (let i = 1; i < randA; i++) {
+            bodySelector.append($('<br><a href="a.html">a</a>'));
+            if (i === randB) {
+                bodySelector.append($('<br><a href="b.html">b</a>'));
+            }
+        }
+    });
+
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+</script>
+Hello World from left panel!
+</body>
+</html>

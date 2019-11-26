@@ -1,0 +1,22 @@
+{
+    "name": "dv.ger/test-task-1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Dmitriy",
+            "email": "dv.ger@ya.ru"
+        }
+    ],
+    "require": {
+        "ext-json": "*"
+    },
+
+    "autoload": {
+        "psr-4": {},
+        "classmap": [
+            "classes/"
+        ],
+        "files": [
+        ]
+    }
+}
